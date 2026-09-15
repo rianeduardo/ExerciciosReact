@@ -10,7 +10,7 @@ function App() {
         <section className="intro">
           <p className="eyebrow">Curadoria para o seu dia</p>
           <h1>Casa Nativa</h1>
-          <p>Produtos simples, bonitos e feitos para deixar a rotina mais leve.</p>
+          <p>Produtos gerais, bonitos e funcionais.</p>
         </section>
         <Home />
       </main>
