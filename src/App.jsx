@@ -1,18 +1,18 @@
 import './App.css'
-import Header from './components/Header'
-import Home from './pages/Home'
+import Cabecalho from './components/Cabecalho'
+import Inicio from './pages/Inicio'
 
 function App() {
   return (
-    <div className="app-shell">
-      <Header />
+    <div className="aplicativo">
+      <Cabecalho />
       <main>
-        <section className="intro">
-          <p className="eyebrow">Curadoria para o seu dia</p>
+        <section className="introducao">
+          <p className="rotulo">Curadoria para o seu dia</p>
           <h1>Casa Nativa</h1>
           <p>Produtos gerais, bonitos e funcionais.</p>
         </section>
-        <Home />
+        <Inicio />
       </main>
     </div>
   )

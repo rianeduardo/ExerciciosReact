@@ -1,10 +1,10 @@
-.app-shell {
+.aplicativo {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 32px 64px;
 }
 
-.site-header {
+.cabecalho {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +12,7 @@
   border-bottom: 1px solid var(--line);
 }
 
-.brand {
+.marca {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.brand-mark {
+.simbolo-marca {
   display: grid;
   width: 34px;
   height: 34px;
@@ -34,7 +34,7 @@
   font-size: 11px;
 }
 
-.highlight-button {
+.botao-destaque {
   padding: 11px 16px;
   color: var(--paper);
   background: var(--accent);
@@ -44,20 +44,20 @@
   cursor: pointer;
 }
 
-.intro {
+.introducao {
   max-width: 660px;
   padding: 88px 0 56px;
 }
 
-.eyebrow,
-.product-category {
+.rotulo,
+.categoria-produto {
   color: var(--accent);
   font: bold 12px Arial, sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
-.intro h1 {
+.introducao h1 {
   margin: 14px 0 10px;
   font-size: clamp(48px, 8vw, 92px);
   line-height: 0.95;
@@ -65,13 +65,13 @@
   letter-spacing: -3px;
 }
 
-.intro > p:last-child {
+.introducao > p:last-child {
   max-width: 430px;
   color: var(--muted);
   font-size: 19px;
 }
 
-.section-heading {
+.cabecalho-secao {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -79,86 +79,86 @@
   border-bottom: 1px solid var(--line);
 }
 
-.section-heading h2 {
+.cabecalho-secao h2 {
   margin: 0 0 12px;
   font-size: 25px;
   font-weight: normal;
 }
 
-.section-heading span {
+.cabecalho-secao span {
   color: var(--muted);
   font: 12px Arial, sans-serif;
   text-transform: uppercase;
 }
 
-.product-grid {
+.grade-produtos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.product-card {
+.cartao-produto {
   overflow: hidden;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 4px;
 }
 
-.product-card.is-featured {
+.cartao-produto.destaque {
   border: 2px solid var(--ink);
 }
 
-.product-card.is-sale .product-category {
+.cartao-produto.oferta .categoria-produto {
   color: #ad5b25;
 }
 
-.product-card.is-out-of-stock {
+.cartao-produto.sem-estoque {
   opacity: 0.62;
 }
 
-.product-image {
+.imagem-produto {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1.08;
   object-fit: cover;
 }
 
-.product-info {
+.info-produto {
   padding: 20px;
 }
 
-.product-info h2 {
+.info-produto h2 {
   margin: 8px 0;
   font-size: 22px;
   font-weight: normal;
 }
 
-.product-description {
+.descricao-produto {
   min-height: 42px;
   margin: 0 0 12px;
   color: var(--muted);
   font-size: 15px;
 }
 
-.product-price {
+.preco-produto {
   margin: 0;
   color: var(--muted);
   font: 14px Arial, sans-serif;
 }
 
-.stock-message {
+.mensagem-estoque {
   margin: 8px 0 0;
   color: #a94b3d;
   font: bold 12px Arial, sans-serif;
 }
 
-.product-actions {
+.acoes-produto {
   display: flex;
   gap: 8px;
   margin-top: 18px;
 }
 
-.product-actions button {
+.acoes-produto button {
   padding: 9px 10px;
   color: var(--paper);
   background: var(--ink);
@@ -168,18 +168,18 @@
   cursor: pointer;
 }
 
-.product-actions button:disabled {
+.acoes-produto button:disabled {
   background: var(--muted);
   cursor: not-allowed;
 }
 
-.product-actions .favorite-button {
+.acoes-produto .botao-favorito {
   color: var(--ink);
   background: transparent;
   border: 1px solid var(--line);
 }
 
-.empty-message {
+.mensagem-vazia {
   padding: 24px;
   color: var(--muted);
   background: var(--card);
@@ -187,15 +187,15 @@
 }
 
 @media (max-width: 720px) {
-  .app-shell {
+  .aplicativo {
     padding: 0 20px 40px;
   }
 
-  .intro {
+  .introducao {
     padding: 64px 0 40px;
   }
 
-  .product-grid {
+  .grade-produtos {
     grid-template-columns: 1fr;
   }
 }

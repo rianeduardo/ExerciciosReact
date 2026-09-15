@@ -37,15 +37,15 @@ Esse comando inicia o servidor de desenvolvimento do Vite. Depois, acesse a URL 
 
 Na etapa 2, criamos 2 componentes e 1 page.
 
-- ```Header.jsx```, ```ProductCard.jsx``` em ```src/components```.
-- ```Home.jsx``` em ```src/pages```.
+- ```Cabecalho.jsx```, ```CartaoProduto.jsx``` em ```src/components```.
+- ```Inicio.jsx``` em ```src/pages```.
 
 Além de termos configurado o App.jsx em ```src``` para conter informações da loja
 
 ## 6. Props, eventos e renderização
 
-- A lista fixa com 5 produtos fica em `Home.jsx` e é exibida usando `map`.
-- Os dados de cada produto são enviados para `ProductCard.jsx` por props.
+- A lista fixa com 5 produtos fica em `Inicio.jsx` e é exibida usando `map`.
+- Os dados de cada produto são enviados para `CartaoProduto.jsx` por props.
 - Cada card tem botões para adicionar ao carrinho e favoritar o produto.
 - A mensagem de produtos indisponíveis aparece quando não há itens em estoque.
-- As classes `is-featured`, `is-sale` e `is-out-of-stock` diferenciam os produtos em destaque, em oferta e fora de estoque.
+- As classes `destaque`, `oferta` e `sem-estoque` diferenciam os produtos em destaque, em oferta e fora de estoque.

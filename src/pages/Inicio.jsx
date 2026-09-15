@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ProductCard from '../components/ProductCard'
+import CartaoProduto from '../components/CartaoProduto'
 
 const produtos = [
   {
@@ -54,7 +54,7 @@ const produtos = [
   },
 ]
 
-function Home() {
+function Inicio() {
   const [carrinho, setCarrinho] = useState([])
   const [favoritos, setFavoritos] = useState([])
   const produtosDisponiveis = produtos.filter((produto) => produto.estoque)
@@ -73,21 +73,21 @@ function Home() {
 
   return (
     <section>
-      <div className="section-heading">
-        <h2 id="products-title">Escolhas da semana</h2>
+      <div className="cabecalho-secao">
+        <h2 id="titulo-produtos">Escolhas da semana</h2>
         <span>{carrinho.length} no carrinho | {favoritos.length} favoritos</span>
       </div>
       {produtosDisponiveis.length === 0 && (
-        <p className="empty-message">Não há produtos disponíveis no momento.</p>
+        <p className="mensagem-vazia">Não há produtos disponíveis no momento.</p>
       )}
-      <div className="product-grid">
+      <div className="grade-produtos">
         {produtos.map((produto) => (
-          <ProductCard
+          <CartaoProduto
             key={produto.nome}
             {...produto}
-            favoritado={favoritos.includes(produto)}
-            onAdicionar={() => adicionarAoCarrinho(produto)}
-            onFavoritar={() => alternarFavorito(produto)}
+            favorito={favoritos.includes(produto)}
+            aoAdicionar={() => adicionarAoCarrinho(produto)}
+            aoFavoritar={() => alternarFavorito(produto)}
           />
         ))}
       </div>
@@ -95,4 +95,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Inicio
