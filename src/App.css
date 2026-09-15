@@ -91,6 +91,45 @@
   text-transform: uppercase;
 }
 
+.formulario-produto {
+  margin-bottom: 32px;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.formulario-produto h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.campos-formulario {
+  display: flex;
+  gap: 8px;
+}
+
+.campos-formulario input,
+.campos-formulario button {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font: 14px Arial, sans-serif;
+}
+
+.campos-formulario input {
+  flex: 1;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.campos-formulario button {
+  color: var(--paper);
+  background: var(--ink);
+  cursor: pointer;
+}
+
 .grade-produtos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -179,6 +218,12 @@
   border: 1px solid var(--line);
 }
 
+.acoes-produto .botao-remover {
+  color: #a94b3d;
+  background: transparent;
+  border: 1px solid #d9aaa1;
+}
+
 .mensagem-vazia {
   padding: 24px;
   color: var(--muted);
@@ -197,5 +242,9 @@
 
   .grade-produtos {
     grid-template-columns: 1fr;
+  }
+
+  .campos-formulario {
+    flex-direction: column;
   }
 }

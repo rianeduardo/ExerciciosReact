@@ -49,3 +49,11 @@ Além de termos configurado o App.jsx em ```src``` para conter informações da 
 - Cada card tem botões para adicionar ao carrinho e favoritar o produto.
 - A mensagem de produtos indisponíveis aparece quando não há itens em estoque.
 - As classes `destaque`, `oferta` e `sem-estoque` diferenciam os produtos em destaque, em oferta e fora de estoque.
+
+## 7. Estado com React
+
+- A lista de produtos agora usa `useState`.
+- O formulário cadastra produtos com nome, preço e categoria.
+- O botão `Remover` remove o produto criando um novo array com `filter`.
+- O botão `Destacar` altera o destaque usando `map`, sem mutar o estado original.
+- O cabeçalho mostra o total de produtos e o valor acumulado no carrinho.

@@ -10,6 +10,8 @@ function CartaoProduto({
 	favorito,
 	aoAdicionar,
 	aoFavoritar,
+	aoRemover,
+	aoDestacar,
 }) {
 	return (
 		<article className={`cartao-produto ${destaque ? 'destaque' : ''} ${oferta ? 'oferta' : ''} ${!estoque ? 'sem-estoque' : ''}`}>
@@ -26,6 +28,12 @@ function CartaoProduto({
 					</button>
 					<button type="button" className="botao-favorito" onClick={aoFavoritar}>
 						{favorito ? 'Favoritado' : 'Favoritar'}
+					</button>
+					<button type="button" onClick={aoDestacar}>
+						{destaque ? 'Remover destaque' : 'Destacar'}
+					</button>
+					<button type="button" className="botao-remover" onClick={aoRemover}>
+						Remover
 					</button>
 				</div>
 			</div>
